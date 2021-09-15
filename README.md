@@ -1,5 +1,5 @@
 # ShopifyAdminAPICustomer
-Develop a complete solution from Domain Discovery to Deploy in production-ready environment.
+Develop a complete solution of a public shopify API from domain discovery to deploy in production-ready environment for demostrating some patterns in action like Domain-driven Design, microservice, sync and async communication, event-driven, hexagonal architecture, and much more.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
