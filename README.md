@@ -19,7 +19,7 @@ Design and develop a complete solution of a public shopify API from domain disco
         <a href="#tactical-design">Tactical Design</a>
       </li>
       <li>
-        <a href="workflow-process/workflow-process.md">Workflow Process</a>
+        <a href="#the-workflow">The Workflow</a>
       </li>
     </ul>
   </ol>
