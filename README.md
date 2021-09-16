@@ -11,7 +11,7 @@ Design and develop a complete solution of a public shopify API from domain disco
     <li>
       <a>Strategic Design</a>
       <ul>
-        <li><a href="#analyze-domain">Analyze Domain</a></li>
+        <li><a href="strategic-design/analyze-domain.md">Analyze Domain</a></li>        
         <li><a href="#define-bounded-contexts-and-ubiquitous-language">Define Bounded Contexts and Ubiquitous Language</a></li>
         <li><a href="#business-requirements">Business Requirements</a></li>
         <li><a href="#tecnical-requirements">Tecnical Requirements</a></li>
