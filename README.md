@@ -39,9 +39,9 @@ XXXX
 XXXX
 <br><br>[Tactical Design](tactical-design/tactical-design.md)
 
-## Workflow Process
+## The Workflow
 
 XXXX
-<br><br>[Workflow Process](workflow-process/workflow-process.md)
+<br><br>[The Workflow](the-workflow/the-workflow.md)
 
 
