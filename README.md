@@ -6,42 +6,22 @@ Design and develop a complete solution of a public shopify API from domain disco
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>      
-    </li>    
-    <li>
-      <a>Strategic Design</a>
-      <ul>
-        <li><a href="strategic-design/analyze-domain.md">Analyze Domain</a></li>        
-        <li><a href="#define-bounded-contexts-and-ubiquitous-language">Define Bounded Contexts and Ubiquitous Language</a></li>
-        <li><a href="#business-requirements">Business Requirements</a></li>
-        <li><a href="#tecnical-requirements">Tecnical Requirements</a></li>
-        <li><a href="#identify-microservices">Identify Microservices</a></li>
-        <li><a href="#customer-state-machine">Customer State Machine</a></li>
-        <li><a href="#solution-design">Solution Design</a></li>
-        <li><a href="#api-swagger">API Swagger</a></li>
-        <li><a href="#async-api">Async API</a></li>
-      </ul>      
+      <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a>Tactical Design</a>
-      <ul>
-        <li><a href="#define-aggregates-entities-and-value-objects">Define aggregates entities and value objects</a></li>
-        <li><a href="#the-hexagonal-architecture">The Hexagonal Architecture</a></li>
-      </ul>      
+       <a>Development Process</a>
     </li>
-    <li>
-      <a>Development Process</a>
-      <ul>
-        <li>
-          <a>Solution Specification</a>
-          <ul>
-            <li><a href="#api-gateway-specification">API Gateway Specification</a></li>
-            <li><a href="#microservice-specification">Microservice Specification</a></li>            
-          </ul>
-        </li>
-        <li>(Continue...)</li>
-      </ul>      
-    </li>
+    <ul>
+      <li>
+        <a href="#strategic-design">Strategic Design</a>
+      </li>
+      <li>
+        <a href="#tactical-design">Tactical Design</a>
+      </li>
+      <li>
+        <a href="workflow-process/workflow-process.md">Workflow Process</a>
+      </li>
+    </ul>
   </ol>
 </details>
 
@@ -49,28 +29,19 @@ Design and develop a complete solution of a public shopify API from domain disco
 
 This project was inspired in <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer Admin API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
 
-## Analyze Domain
+## Strategic Design
 
-## Define Bounded Contexts and Ubiquitous Language
+XXXX 
+<br><br>[Strategic Design](strategic-design/strategic-design.md)
 
-## Business Requirements
+## Tactical Design
 
-## Tecnical Requirements
+XXXX
+<br><br>[Tactical Design](tactical-design/tactical-design.md)
 
-## Identify Microservices
+## Workflow Process
 
-## Customer State Machine
+XXXX
+<br><br>[Workflow Process](workflow-process/workflow-process.md)
 
-## Solution Design
 
-## API Swagger
-
-## Async API
-
-## Define aggregates entities and value objects
-
-## The Hexagonal Architecture
-
-## API Gateway Specification
-
-## Microservice Specification
