@@ -31,7 +31,7 @@ This project was inspired in <a href="https://shopify.dev/api/admin/rest/referen
 
 ## Strategic Design
 
-XXXX 
+This section aims at creating all deliverables to clearly understand the problem and proposed solution. It encompasses analysing the business domain, defining bounded context and ubiquitous language, gathering business and technical requirements, making solution design and artifacts that will support the development teams, such as Swagger and Async API.
 <br><br>[Strategic Design](strategic-design/strategic-design.md)
 
 ## Tactical Design
