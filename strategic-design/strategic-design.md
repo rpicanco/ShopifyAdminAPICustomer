@@ -8,11 +8,7 @@
       <a href="analyze-domain.md">Analyze Domain</a>
     </li>
     <li>
-<<<<<<< HEAD
-      <a href="strategic-design/define-bounded-contexts.md">Define Bounded Contexts</a>
-=======
       <a href="define-bounded-contexts-and-ubiquitous-language.md">Define Bounded Contexts and Ubiquitous Language</a>
->>>>>>> b97bbd504ae232fa156fa806ae96d20e4984f173
     </li>
     <li>
       <a href="business-requirements.md">Business Requirements</a>
