@@ -17,7 +17,7 @@
       <a href="tecnical-requirements.md">Tecnical Requirements</a>
     </li>
     <li>
-      <a href="container-diagram.md">Conteiner Diagram</a>
+      <a href="container-diagram.md">Container Diagram</a>
     </li>
     <li>
       <a href="customer-state-machine.md">Customer State Machine</a>
