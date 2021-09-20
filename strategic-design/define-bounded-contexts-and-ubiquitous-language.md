@@ -1,0 +1,1 @@
+[[/strategic-design/Spotify Customer API - Define Bounded Contexts.png]]
