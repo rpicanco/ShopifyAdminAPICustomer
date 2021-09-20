@@ -27,11 +27,11 @@ Design and develop a complete solution of a public shopify API from domain disco
 
 ## About the Project
 
-This project was inspired in <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer Admin API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
+This project was based on <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer Admin API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
 
 ## Strategic Design
 
-This section aims at creating all deliverables to clearly understand the problem and proposed solution. It encompasses analysing the business domain, defining bounded context and ubiquitous language, gathering business and technical requirements, making solution design and artifacts that will support the development teams, such as Swagger and Async API.
+This section aims at creating all deliverables to clearly understand the problem and proposed solution. It encompasses analysing the business domain, defining bounded context and ubiquitous language, registering architectural decisions made, gathering business and technical requirements, making solution design and artifacts that will support the development teams, such as Swagger and Async API and so on.
 <br><br>[Strategic Design](strategic-design/strategic-design.md)
 
 ## Tactical Design
