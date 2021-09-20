@@ -1,1 +1,1 @@
-[[/strategic-design/Spotify Customer API - Define Bounded Contexts.png]]
+<img src="Spotify Customer API - Define Bounded Contexts.png">
