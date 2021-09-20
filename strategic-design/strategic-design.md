@@ -5,7 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="strategic-design/analyze-domain.md">Analyze Domain</a>
+      <a href="analyze-domain.md">Analyze Domain</a>
     </li>
     <li>
       <a href="strategic-design/define-bounded-contexts-and-ubiquitous-language.md">Define Bounded Contexts and Ubiquitous Language</a>
