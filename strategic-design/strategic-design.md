@@ -17,7 +17,7 @@
       <a href="access-scopes.md">Access Acopes</a>
     </li>
     <li>
-      <a href="container-diagram.md">Identify Microservices</a>
+      <a href="container-diagram.md">Container Diagram</a>
     </li>
     <li>
       <a href="customer-state-machine.md">Customer State Machine</a>
