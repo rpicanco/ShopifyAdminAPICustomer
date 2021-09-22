@@ -39,7 +39,7 @@ This section aims at creating all deliverables to clearly understand the problem
 XXXX
 <br><br>[Tactical Design](tactical-design/tactical-design.md)
 
-## The Workflow
+## The Development Workflow
 
 XXXX
 <br><br>[The Development Workflow](the-dev-workflow/the-dev-workflow.md)
