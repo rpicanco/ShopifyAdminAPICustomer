@@ -14,7 +14,7 @@
       <a href="business-requirements.md">Business Requirements</a>
     </li>
     <li>
-      <a href="tecnical-requirements.md">Tecnical Requirements</a>
+      <a href="access-scopes.md">Access Acopes</a>
     </li>
     <li>
       <a href="container-diagram.md">Identify Microservices</a>
