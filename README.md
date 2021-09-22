@@ -27,7 +27,7 @@ Design and develop a complete solution of a public shopify API from domain disco
 
 ## About the Project
 
-This project was based on <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer Admin API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
+This project was based on <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
 
 ## Strategic Design
 
