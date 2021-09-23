@@ -1,5 +1,5 @@
 # ShopifyAdminAPICustomer
-Design and develop a complete solution of a public shopify API from domain discovery to deploy in a production-ready environment for demostrating some patterns in action, such as Domain-Driven Design, API Gateway, RESTful API Design, Async API, Microservice Architecture, Sync and Async communication, Event-Driven, pub/sub and request-reply messaging pattern, Hexagonal architecture, and much more.
+This project aims to propose a structured development process from understanding the business domain using domain-driven design practices to deploy the solution in a production-ready environment. We will design and develop a solution of a public shopify API showing some patterns in action, such as Domain-Driven Design, API Gateway, RESTful API Design, Async API, Microservice Architecture, Sync and Async communication, Event-Driven, pub/sub and request-reply messaging pattern, Hexagonal architecture, and much more.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -49,7 +49,7 @@ This section aims to define the solution architecture as well as register all ar
 
 ## Development
 
-This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component involved in the solution, behaviour-driven development practices and the source code itself.
+This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component involved in the solution, behaviour-driven development features and scenarios and the source code itself.
 <br><br>[Development](development/development.md)
 
 
