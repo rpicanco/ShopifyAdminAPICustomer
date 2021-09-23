@@ -1,1 +1,0 @@
-<img src="Spotify Customer API - Solution Design.png">

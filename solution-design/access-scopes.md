@@ -13,4 +13,3 @@
 	<li><code>search_customers</code><br/>
 	Access to <b>Read Customer Information in an advanced manner.</b> (GET).</li>
 <ul>
-

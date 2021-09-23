@@ -1,4 +1,4 @@
-<img src="Spotify Customer API - Analyze Domain.png">
+<img src="Spotify Customer API - Domain Dicovery.png">
 
 <div>
   <h2>Merchant</h2>

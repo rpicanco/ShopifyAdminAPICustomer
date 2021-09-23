@@ -1,0 +1,1 @@
+<img src="Spotify Customer Admin API - Customer State Machine.png">
