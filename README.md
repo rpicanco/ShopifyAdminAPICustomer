@@ -34,12 +34,12 @@ This project was based on <a href="https://shopify.dev/api/admin/rest/reference/
 
 ## Business Domain Design
 
-This section aims to understand the business domain, identifying their subdomains and defining the bounded context mapping using Domain-Driven Design practices. In addition, this section is where we gather the functional requirements and identify microservice boundaries that will be part of the solution.
+This section aims to understand the business domain, identifying the subdomains and defining the bounded context mapping using Domain-Driven Design practices. In addition, this section is where we register the functional requirements and identify microservice boundaries that will be part of the solution.
 <br><br>[Business Domain Design](business-domain-design/business-domain-design.md)
 
 ## Solution Design
 
-This section aims to define a solution based on the business domain design section result, creating deliverables that will give support for the solution architecture and development itself.
+This section aims to define a solution based on the business domain design section, creating deliverables that will give support for the solution architecture and development itself.
 <br><br>[Solution Design](solution-design/solution-design.md)
 
 ## Architecture
@@ -49,7 +49,7 @@ This section aims to define the solution architecture as well as register all ar
 
 ## Development
 
-This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component involved in the solution, behaviour-driven development features and scenarios and the source code itself.
+This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component from the solution, behaviour-driven development features and scenarios and the source code itself.
 <br><br>[Development](development/development.md)
 
 
