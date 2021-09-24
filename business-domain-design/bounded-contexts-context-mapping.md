@@ -1,0 +1,1 @@
+<img src="Spotify Customer API - Bounded Contexts - Context Mapping.png">
