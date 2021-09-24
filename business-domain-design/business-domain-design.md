@@ -8,7 +8,10 @@
       <a href="domain-discovery.md">Domain Discovery</a>
     </li>
     <li>
-      <a href="business-requirements.md">Business Requirements</a>
+      <a href="functional-requirements.md">Functional Requirements</a>
+    </li>
+	<li>
+      <a href="features-scenarios.md">Features & Scenarios - Behaviour Driven Development</a>
     </li>
     <li>
       <a href="bounded-contexts-context-mapping.md">Bounded Contexts - Context Mapping</a>
