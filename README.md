@@ -49,7 +49,7 @@ This section aims to define the solution architecture as well as register all ar
 
 ## Development
 
-This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component from the solution, behaviour-driven development features and scenarios and the source code itself.
+This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component from the solution, behaviour-driven development features and scenarios, infrastructure as code (IaC) artifacts and the source code itself.
 <br><br>[Development](development/development.md)
 
 
