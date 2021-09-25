@@ -1,7 +1,7 @@
 <div>
   <h2>Identify Microservice Boundariess</h2>
-  This project focused on Customer Context, according to <a href="<img src="Spotify Customer API - Bounded Contexts - Context Mapping.png">">Bounded Contexts - Context Mapping</a>
-  <br>
+  This project have focused on <b>Customer Context</b>, according to <a href="bounded-contexts-context-mapping.md">Bounded Contexts - Context Mapping</a>
+  <br><br>
   As an exception, we need to mock the Order microservice just to allow the customer microservice fetch orders. 
 </div>
 
