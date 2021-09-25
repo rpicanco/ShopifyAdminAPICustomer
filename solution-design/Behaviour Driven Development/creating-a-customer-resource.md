@@ -52,4 +52,4 @@
 	<b>And</b> The customer has enabled its account (<i>state = enabled</i>)<br>
 </details>
 
-## Scenarios - <img src="exception_icon.png" width="100" height="30">
+## Scenarios - <img src="exception_icon.png" width="100" height="18">
