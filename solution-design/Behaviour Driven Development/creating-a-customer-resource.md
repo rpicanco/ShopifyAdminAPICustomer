@@ -5,7 +5,7 @@
   </div>
 </div>
 
-<h2>Scenarios</h2> 
+## Scenarios - ![Success](<img src="success_icon.png">)
 
 <details>
   <summary>Creating a customer resource with only required fields</summary><br>
@@ -51,3 +51,5 @@
   <b>Then</b> I should receive a success message confirming customer resource creation<br>
 	<b>And</b> The customer has enabled its account (<i>state = enabled</i>)<br>
 </details>
+
+## Scenarios - ![Exception](<img src="exception_icon.png">)
