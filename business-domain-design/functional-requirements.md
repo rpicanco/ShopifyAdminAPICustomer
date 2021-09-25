@@ -67,6 +67,36 @@
 	<br>
 	<li>[<b>FR26</b>] The system must allow Merchants delete a customer saved search.</li>	
 	<br>
-	<li>[<b>FR27</b>] XXXX.</li>	
+	<li>[<b>FR27</b>] The system <b>must not</b> allow the Merchant to assign the same email address to multiple customers.</li>	
+	<br>
+	<li>[<b>FR28</b>] The system <b>must not</b> allow the Merchant to assign the same phone to multiple customers.</li>	
+	<br>
+	<li>[<b>FR29</b>] The system <b>must not</b> allow the Merchant to visualize customer's information from other merchants.</li>	
+	<br>
+	<li>[<b>FR30</b>] The system must allow the Merchant to inform whether the customer has verified their email address.</li>	
+	<br>
+	<li>[<b>FR31</b>] The system must allow the Merchant to visualize the number of orders associated with a customer.</li>	
+	<br>
+	<li>[<b>FR32</b>] The system must allow the Merchant to visualize the ID of the customer's last order.</li>	
+	<br>
+	<li>[<b>FR33</b>] The system must allow the Merchant to visualize the name of the customer's last order.</li>	
+	<br>
+	<li>[<b>FR34</b>] The system must allow the Merchant to visualize the total amount of money that the customer has spent across their order history.</li>	
+	<br>
+	<li>[<b>FR35</b>] The system must allow the Merchant add tags that the shop owner has attached to the customer, A customer can have up to 250 tags.</li>	
+	<br>
+	<li>[<b>FR36</b>] The system must allow the Merchant to inform whether the customer is exempt from paying taxes on their order.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow the Shopify Adm to change the customer's state for any time.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow whether the customer has consented to receive marketing material via email.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow a customer to activate its account in the customer resource creation.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow a customer to not activate its account in the customer resource creation.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow a customer to not accept an account activation invite.</li>	
+	<br>
+	<li>[<b>FR37</b>] The system must allow a customer to be activated whether it has at least one address associated with it.</li>	
 	<br>
 <ul>
