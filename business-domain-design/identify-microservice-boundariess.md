@@ -14,15 +14,15 @@
 
 <div>
   <h2>Address</h2>
-  This Microservice is responsible for managing customer addresses. We decided to split it out from customer microservice for readability, maintainability and be independently scalable even creating a tightly coupled component with the Customer Microservice because there is no address without a customer.
+  This Microservice is responsible for managing customer addresses. We decided to split it out from customer microservice for readability, maintainability and be independently scalable. Moreover, we do not consider it as a Value Object of Customer, because the Address has its own ID been easily independently editable from Customer entity. 
 </div>
 
 <div>
   <h2>CustomerSearch</h2>
-  Responsible for...
+  This Microservice is responsible for managing saved searches for representing a group of customers defined by the shop owner.
 </div>
 
 <div>
   <h2>Order</h2>
-  Responsible for...
+  This Microservice is a mock one. It is responsible for giving order information to the customer microservice.
 </div>
