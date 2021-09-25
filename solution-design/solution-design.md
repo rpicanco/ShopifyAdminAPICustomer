@@ -13,6 +13,9 @@
 	<li>
       <a href="access-scopes.md">Access Scopes</a>
     </li>
+	<li>
+      <a href="features-scenarios.md">Features & Scenarios - Behaviour Driven Development</a>
+    </li>
     <li>
       <a href="restful-apis-specification-gateway.md">RESTful APIs Specification (Gateway) - OpenAPI</a>
     </li>

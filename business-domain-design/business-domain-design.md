@@ -9,10 +9,7 @@
     </li>
     <li>
       <a href="functional-requirements.md">Functional Requirements</a>
-    </li>
-	<li>
-      <a href="features-scenarios.md">Features & Scenarios - Behaviour Driven Development</a>
-    </li>
+    </li>	
     <li>
       <a href="bounded-contexts-context-mapping.md">Bounded Contexts - Context Mapping</a>
     </li>
