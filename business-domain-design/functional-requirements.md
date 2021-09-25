@@ -1,6 +1,6 @@
 <div>
   <h2>Functional Requirements</h2>
-	As we know, one of the main benefits of APIs is hide of backend implementation. Some requirements I was able to highlight from Shopify's public API documentation and others requirements I had to assume for our project.<br><br>
+	As we know, one of the main benefits of APIs is to hide of backend implementation. Some requirements I was able to highlight from Shopify's public API documentation and others requirements I had to assume for our project.<br><br>
 </div>
 
 <ul>
