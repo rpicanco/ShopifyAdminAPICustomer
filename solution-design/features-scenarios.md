@@ -2,10 +2,10 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Features</summary>
   <ol>
     <li>
-      <a href="Behaviour Driven Development/Feature1.md">Feature1</a>
+      <a href="Behaviour Driven Development/creating-a-customer-resource.md">Creating a customer resource</a>
     </li>
     <li>
       <a href="Behaviour Driven Development/Feature2.md">Feature1</a>
