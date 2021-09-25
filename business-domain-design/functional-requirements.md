@@ -8,7 +8,7 @@
 	<br>
 	<li>[<b>FR02</b>] The system must allow Merchants generate an account activation URL for a customer whose account is not yet enabled. The account activation URL generated is for one-time use and will expire after 30 days. If the Merchant generate a new account activation URL, then the new URL will be again valid for 30 days, but the previous URL will no longer be valid.</li>
 	<br>
-	<li>[<b>FR03</b>] The system must allow Merchants send an account invite to their customers.</li>
+	<li>[<b>FR03</b>] The system must allow Merchants send an account invite (welcome email) to their customers.</li>
 	<br>
 	<li>[<b>FR04</b>] The system must allow Merchants retrieve a list of customers from its portfolio.</li>
 	<br>
