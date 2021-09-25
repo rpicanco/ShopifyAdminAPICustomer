@@ -40,4 +40,33 @@
 	<br>
 	<li>[<b>FR18</b>] The system must allow only one address default for a customer.</li>	
 	<br>
+	<li>[<b>FR19</b>] The system must allow Merchants saved search to represent a "group of customers" defined by the shop owner. In the Shopify admin, the shop owner searches for customers by entering a query and applying one or more filters. When results are returned, the shop owner can save the search and give it a name. After the customer saved search is created, the shop owner can select it at a later date to see a list of customers that match the query.</li>	
+	<br>
+	<li>[<b>FR20</b>] The system must allow the following customer search advanced queries:</li>
+	  <ul>
+	    <li>Filter customers by whether they accept email marketing.</li>
+	    <li>Retrieve customers from a specified country.</li>
+	    <li>Retrieve customers who were created within a set period of time.</li>
+	    <li>Retrieve customers who abandoned a cart within a set period of time.</li>
+            <li>Retrieve customers who placed an order within a set period of time.</li>
+	    <li>Filter customres by the number of orders they've placed with the store.</li>
+	    <li>Filter customers by their customer account status.</li>
+	    <li>Filter customers by tag. Valid values are any existing customer tag, contained in quotation marks.</li>
+	    <li>Filter customers by the total amount that they have spent across all of their orders.</li>
+	  </ul>
+	<br>
+	<li>[<b>FR21</b>] The system must allow Merchants retrieve a list of saved search.</li>	
+	<br>
+	<li>[<b>FR22</b>] The system must allow Merchants retrieve a single saved search.</li>	
+	<br>
+	<li>[<b>FR23</b>] The system must allow Merchants retrieve all customers returned by a customer saved search.</li>	
+	<br>
+	<li>[<b>FR24</b>] The system must allow Merchants retrieve a count of all customer saved searches.</li>	
+	<br>
+	<li>[<b>FR25</b>] The system must allow Merchants update a customer saved search.</li>	
+	<br>
+	<li>[<b>FR26</b>] The system must allow Merchants delete a customer saved search.</li>	
+	<br>
+	<li>[<b>FR27</b>] XXXX.</li>	
+	<br>
 <ul>
