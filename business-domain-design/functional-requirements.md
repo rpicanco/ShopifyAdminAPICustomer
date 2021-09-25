@@ -23,13 +23,21 @@
 	<li>[<b>FR09</b>] The system must allow Merchants update their customers from its portfolio.</li>
 	<br>
 	<li>[<b>FR10</b>] The system must allow Merchants delete their customers from its portfolio if they have no existing orders.</li>
+	<br>
 	<li>[<b>FR11</b>] The system must allow Merchants create addresses for their customers. Each customer can have multiple addresses associated with them. If there is no address, the newest one will be the address default.</li>
+	<br>
 	<li>[<b>FR12</b>] The system must allow Merchants retrieve a customer’s address list.</li>
+	<br>
 	<li>[<b>FR13</b>] The system must allow Merchants retrieve a single address from a customer.</li>
+	<br>
 	<li>[<b>FR14</b>] The system must allow Merchants update a single address from a customer.</li>
+	<br>
 	<li>[<b>FR15</b>] The system must allow Merchants set the default address for a customer.</li>
+	<br>
 	<li>[<b>FR16</b>] The system must allow Merchants delete a single address from a customer if it is not the default one.</li>
+	<br>
 	<li>[<b>FR17</b>] The system must allow Merchants delete a customer’s address list except the default one.</li>
-	<li>[<b>FR18</b>] The system must allow only one address default for a customer.</li>
+	<br>
+	<li>[<b>FR18</b>] The system must allow only one address default for a customer.</li>	
 	<br>
 <ul>
