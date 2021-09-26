@@ -131,7 +131,7 @@
     <b>And</b> I inform the <code>email</code> <b><i>"robert.smith@example.com"</i></b><br>    
     <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
     <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
-    <b>And</b> I inform the <code>phone</code> <b><i>"6135551212"</i></b>
+    <b>And</b> I inform the <code>phone</code> <b><i>"6135551212"</i></b><br>
     <b>When</b> I create a customer resource<br>
     <b>Then</b> The system should not create the customer resource<br>
     <b>And</b> The system should return a generic message <code>The customer can't be created</code> as error message<br>
