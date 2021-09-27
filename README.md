@@ -30,7 +30,7 @@ This project aims to propose a structured development process giving insights in
 
 ## About the Project
 
-This project was based on <a href="https://shopify.dev/api/admin/rest/reference/customers">Customer API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
+This project was based on <a href="https://shopify.dev/api/admin-rest/2021-07/resources/customer">Customer API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
 
 ## Business Domain Design
 
