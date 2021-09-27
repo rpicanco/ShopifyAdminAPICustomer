@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Feature: Creating a Customer Resource</h1>
   <div class="panel panel-default">    
-    <div class="panel-body"><p style="font-size:100px"><b>In order</b> to manage information about shop's customers<br><b>As</b> a Merchant<br><b>I want</b> to create a customer resource for allowing them to order products in my shop.</p></div>    
+    <div class="panel-body"><p style="font-size:100px"><b>In order</b> to store information about shop's customers<br><b>As</b> a Merchant<br><b>I want</b> to store customer's information for allowing them to order products in my shop.</p></div>    
   </div>
 </div>
 
