@@ -15,7 +15,8 @@
   <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
   <b>When</b> I create a customer resource<br>
-  <b>Then</b> The system should put the customer account as disabled (<code>state = disabled</code>)<br>
+  <b>Then</b> The system should create the customer resource<br>
+  <b>And</b> The system should put the customer account as disabled (<code>state = disabled</code>)<br>
   <b>And</b> The system should return a success message confirming customer resource creation<br>
 </details>
 
@@ -28,7 +29,8 @@
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
   <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>	
   <b>When</b> I create a customer resource<br>
-  <b>Then</b> The system should put the customer account as disabled (<code>state = disabled</code>)<br>
+  <b>Then</b> The system should create the customer resource<br>
+  <b>And</b> The system should put the customer account as disabled (<code>state = disabled</code>)<br>
   <b>And</b> The system should return a success message confirming customer resource creation<br>
 </details>
 
@@ -42,7 +44,8 @@
   <b>And</b> I inform <code>send_email_invite</code> field with <b><i>"true"</i></b><br>
   <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>  
   <b>When</b> I create a customer resource<br>
-  <b>Then</b> The system should put the customer account as invited (<code>state = invited</code>)<br>
+  <b>Then</b> The system should create the customer resource<br>
+  <b>And</b> The system should put the customer account as invited (<code>state = invited</code>)<br>
   <b>And</b> The system should return a success message confirming customer resource creation<br>
 </details>
 
@@ -57,7 +60,8 @@
   <b>And</b> I inform <code>password_confirmation</code> field with <b><i>"newpass"</i></b><br>
   <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>
   <b>When</b> I create a customer resource<br>  
-  <b>Then</b> The system should put the customer account as enabled (<code>state = enabled</code>)<br>
+  <b>Then</b> The system should create the customer resource<br>
+  <b>And</b> The system should put the customer account as enabled (<code>state = enabled</code>)<br>
   <b>And</b> The system should not store the <code>password</code> in plaintext<br>
   <b>And</b> The system should return a success message confirming customer resource creation<br>
 </details>
