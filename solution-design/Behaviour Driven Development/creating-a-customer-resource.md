@@ -15,8 +15,7 @@
 
 <details>
   <summary>Creating a customer resource with only required fields</summary><br>
-  <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
-  <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+  <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>  
   <b>And</b> I inform the <code>email</code> <i><b>"robert.smith@example.com"</b></i><br>
   <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
@@ -27,13 +26,14 @@
 </details>
 
 <details>
-  <summary>Creating a customer resource with all default fields</summary><br>
+  <summary>Creating a customer resource with all fields</summary><br>
   <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
   <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
   <b>And</b> I inform the <code>email</code> <i><b>"robert.smith@example.com"</b></i><br>
   <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
-  <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>	
+  <b>And</b> I inform the <code>phone</code> <b><i>"6135551212"</i></b><br>
+  <b>And</b> I inform all other fields according to <i><b>OpenAPI Contract</b></i><br>	
   <b>When</b> I create a customer resource<br>
   <b>Then</b> The system should create the customer resource<br>
   <b>And</b> The system should put the customer account as disabled (<code>state = disabled</code>)<br>
@@ -48,7 +48,8 @@
   <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
   <b>And</b> I inform <code>send_email_invite</code> field with <b><i>"true"</i></b><br>
-  <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>  
+  <b>And</b> I inform the <code>phone</code> <b><i>"6135551212"</i></b><br>
+  <b>And</b> I inform all other fields according to <i><b>OpenAPI Contract</b></i><br>  
   <b>When</b> I create a customer resource<br>
   <b>Then</b> The system should create the customer resource<br>
   <b>And</b> The system should put the customer account as invited (<code>state = invited</code>)<br>
@@ -64,7 +65,8 @@
   <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>	
   <b>And</b> I inform <code>password</code> field with <b><i>"newpass"</i></b><br>
   <b>And</b> I inform <code>password_confirmation</code> field with <b><i>"newpass"</i></b><br>
-  <b>And</b> I inform all other fields with <code>default values</code> according to <i><b>OpenAPI Contract</b></i><br>
+  <b>And</b> I inform the <code>phone</code> <b><i>"6135551212"</i></b><br>
+  <b>And</b> I inform all other fields according to <i><b>OpenAPI Contract</b></i><br>
   <b>When</b> I create a customer resource<br>  
   <b>Then</b> The system should create the customer resource<br>
   <b>And</b> The system should put the customer account as enabled (<code>state = enabled</code>)<br>
@@ -76,8 +78,7 @@
 
 <details>
   <summary>Creating a customer resource without an email</summary><br>
-    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
-    <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>    
     <b>And</b> I do not inform an <code>email</code><br>
     <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
     <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
@@ -88,8 +89,7 @@
 
 <details>
   <summary>Creating a customer resource without a first name</summary><br>
-    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
-    <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>    
     <b>And</b> I inform the <code>email</code> <b><i>"robert.smith@example.com"</i></b><br>
     <b>And</b> I do not inform a <code>first name</code><br>
     <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
@@ -100,8 +100,7 @@
 
 <details>
   <summary>Creating a customer resource without a last name</summary><br>
-    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
-    <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>    
     <b>And</b> I inform the <code>email</code> <b><i>"robert.smith@example.com"</i></b><br>    
     <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
     <b>And</b> I do not inform a <code>last name</code><br>
@@ -112,8 +111,7 @@
 
 <details>
   <summary>Creating a customer resource without an email, a first name and a last name</summary><br>
-    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>
-    <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+    <b>Given</b> There is no customer with <code>email</code> <b><i>robert.smith@example.com</i></b> for the merchant<br>    
     <b>And</b> I do not inform an <code>email</code><br>    
     <b>And</b> I do not inform a <code>first name</code><br>
     <b>And</b> I do not inform a <code>last name</code><br>
@@ -124,8 +122,7 @@
 
 <details>
   <summary>Creating a customer resource with an email already registered for another customer of the merchant</summary><br>
-    <b>Given</b> There is a customer with <code>email</code> <b><i>robert.smith@example.com</i></b> already registered for the merchant<br>
-    <b>And</b> There is no customer with <code>phone</code> <b><i>6135551212</i></b> for the merchant<br>
+    <b>Given</b> There is a customer with <code>email</code> <b><i>robert.smith@example.com</i></b> already registered for the merchant<br>    
     <b>And</b> I inform the <code>email</code> <b><i>"robert.smith@example.com"</i></b><br>    
     <b>And</b> I inform the <code>first name</code> <b><i>"Robert"</i></b><br>
     <b>And</b> I inform the <code>last name</code> <b><i>"Smith"</i></b><br>
