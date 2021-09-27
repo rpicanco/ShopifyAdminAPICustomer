@@ -6,6 +6,10 @@
 </div>
 
 <a href="/business-domain-design/functional-requirements.md"><code>FR01</code></a>
+<a href="/business-domain-design/functional-requirements.md"><code>FR27</code></a>
+<a href="/business-domain-design/functional-requirements.md"><code>FR28</code></a>
+<a href="/business-domain-design/functional-requirements.md"><code>FR30</code></a>
+<a href="/business-domain-design/functional-requirements.md"><code>FR37</code></a>
 
 ## Scenarios - <img src="success_icon.png" width="100" height="18">
 
