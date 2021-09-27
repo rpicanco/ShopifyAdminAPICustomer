@@ -34,5 +34,26 @@
     <li>
       <a href="Behaviour Driven Development/deleting-a-single-customer.md">Deleting a single customer</a>
     </li>
+    <li>
+      <a href="Behaviour Driven Development/creating-an-address-resource-for-a-customer.md">Creating an address resource for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/retrieving-a-list-of-adresses-for-a-customer.md">Retrieving a list of adresses for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/retrieving-a-single-address-for-a-customer.md">Retrieving a single address for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/updating-a-single-address-for-a-customer.md">Updating a single address for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/setting-a-single-address-as-default-for-a-customer.md">Setting a single address as default for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/deleting-a-single-address-for-a-customer.md">Deleting a single address for a customer</a>
+    </li>
+    <li>
+      <a href="Behaviour Driven Development/release.md">Deleting a list of adresses for a customer</a>
+    </li>
   </ol>
 </details>
