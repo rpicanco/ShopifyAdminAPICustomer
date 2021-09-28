@@ -24,6 +24,10 @@ This project aims to propose a software development process framework giving ins
 	  <li>
         <a href="#development">Development</a>
       </li>
+      </li>
+	  <li>
+        <a href="#operationalization-and-maintenance">Operationalization and Maintenance</a>
+      </li>
     </ul>
   </ol>
 </details>
@@ -51,5 +55,10 @@ This section aims to define the solution architecture as well as register all ar
 
 This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component from the solution, infrastructure as code (IaC) artifacts and the source code itself.
 <br><br>[Development](development/development.md)
+
+## Operationalization and Maintenance
+
+Xxxx.
+<br><br>[Operationalization and Maintenance](operationalization-and-maintenance/operationalization-and-maintenance.md)
 
 
