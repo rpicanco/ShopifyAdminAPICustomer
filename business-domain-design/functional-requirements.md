@@ -89,14 +89,14 @@
 	<br>
 	<li>[<b>FR37</b>] The system must allow the Shopify Adm to change the customer's state for any time.</li>	
 	<br>
-	<li>[<b>FR37</b>] The system must allow whether the customer has consented to receive marketing material via email.</li>	
+	<li>[<b>FR38</b>] The system must allow whether the customer has consented to receive marketing material via email.</li>	
 	<br>
-	<li>[<b>FR37</b>] The system must allow a customer to activate its account in the customer resource creation.</li>	
+	<li>[<b>FR39</b>] The system must allow a customer to activate its account in the customer resource creation.</li>	
 	<br>
-	<li>[<b>FR37</b>] The system must allow a customer to not activate its account in the customer resource creation.</li>	
+	<li>[<b>FR40</b>] The system must allow a customer to not activate its account in the customer resource creation.</li>	
 	<br>
-	<li>[<b>FR37</b>] The system must allow a customer to not accept an account activation invite.</li>	
+	<li>[<b>FR41</b>] The system must allow a customer to decline an account activation invite.</li>	
 	<br>
-	<li>[<b>FR37</b>] The system must allow a customer to be activated whether it has at least one address associated with it.</li>	
+	<li>[<b>FR42</b>] The system must allow a customer to be activated whether it has at least one address associated with it.</li>	
 	<br>
 <ul>
