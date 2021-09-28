@@ -2,7 +2,7 @@
   <h2>Identify Microservice Boundariess</h2>
   This project has focused on <b>Customer Context</b>, according to <a href="bounded-contexts-context-mapping.md">Bounded Contexts - Context Mapping</a>
   <br><br>
-  Each identified domain in Customer Context will be a separated component (microservice). Each microservice in this solution has specific a scalability needs.
+  Each identified domain in Customer Context will be a separated component (microservice). Each microservice in this solution has a specific scalability needs.
   <br><br>
   As an exception, we need to mock the Order microservice just to allow the customer microservice fetch orders. 
 </div>
