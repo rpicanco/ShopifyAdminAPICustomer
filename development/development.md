@@ -5,10 +5,10 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="restful-apis-specifications-ms.md">RESTful APIs Specifications (Microservices) - OpenAPI</a>
+      <a href="api-design-microservices.md">API Design (Microservices) - OpenAPI</a>
     </li>
     <li>
-      <a href="detailed-flow-specification.md">Detailed Flow Specification</a>
+      <a href="microservice-specification.md">Microservice Specification</a>
     </li>
     <li>
       <a href="source-code.md">Source Code</a>
