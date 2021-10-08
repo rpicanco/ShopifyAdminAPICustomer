@@ -99,4 +99,6 @@
 	<br>
 	<li>[<b>FR42</b>] The system must allow a customer to be activated whether it has at least one address associated with it.</li>	
 	<br>
+	<li>[<b>FR43</b>] An address of shop's customers must have at least the fields address1, city and zip filled.</li>
+	<br>	
 <ul>
