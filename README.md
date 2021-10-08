@@ -56,8 +56,8 @@ This section aims to define the solution architecture as well as register all ar
 This section aims to create all deliverables needed to develop the solution, such as detailed flow specifications for each component from the solution and the source code itself.
 <br><br>[Development](development/development.md)
 
-## Release
+## Delivery
 
 This section aims to create all deliverables needed associated with production, deployment, and post-production activities.
-<br><br>[Release](release/release.md)
+<br><br>[Delivery](delivery/delivery.md)
 
