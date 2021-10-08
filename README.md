@@ -34,7 +34,7 @@ This project aims to propose a software development process framework giving ins
 
 ## About the Project
 
-This project was based on <a href="https://shopify.dev/api/admin-rest/2021-07/resources/customer">Customer API</a> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
+This project was based on <a href="https://shopify.dev/api/admin-rest/2021-07/resources/customer">Customer API</a> <i>version 2021-07</i> from <a href="https://shopify.dev/api/admin">Shopify Admin API</a>.
 
 ## Business Domain Design
 
