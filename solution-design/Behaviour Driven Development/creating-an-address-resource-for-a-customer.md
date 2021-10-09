@@ -73,8 +73,8 @@
 
 <details>
   <summary>Creating an address resource for a customer that already has four addresses associated with it</summary><br>
-  <b>Given</b> The customer is already registered for the merchant
-  <b>And</b> there is four addresses associated with it 
+  <b>Given</b> The customer is already registered for the merchant<br>
+  <b>And</b> there are four addresses associated with it<br>
   <b>And</b> I inform the <code>customer_id</code><br>
   <b>And</b> I inform the <code>address1</code> <b><i>"1 Rue des Carrieres"</i></b><br>
   <b>And</b> I inform the <code>city</code> <b><i>"Montreal"</i></b><br>
