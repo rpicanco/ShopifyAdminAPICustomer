@@ -7,7 +7,7 @@
 
 <a href="/business-domain-design/functional-requirements.md"><code>FR12</code></a>
 
-<b>Searchable fields:</b> <code>[city, country_code, province_code, default]</code>
+<b>Searchable fields:</b> [<code>city</code>, <code>country_code</code>, <code>province_code</code>, <code>default</code>]
 
 ## Scenarios - <img src="success_icon.png" width="100" height="18">
 
