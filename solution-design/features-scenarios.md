@@ -5,6 +5,10 @@
   <summary>Features</summary>
   <ol>
     <li>
+      <a>Context: <b>Customer</b></a>
+    </li>
+    <ul>
+      <li>
       <a href="Behaviour Driven Development/creating-a-customer-resource.md">Creating a customer resource</a>
     </li>
     <li>
@@ -24,17 +28,29 @@
     </li>
     <li>
       <a href="Behaviour Driven Development/retrieving-a-count-of-customers-are-in-the-merchant-portfolio.md">Retrieving a count of customers are in the merchant portfolio</a>
-    </li>
-    <li>
-      <a href="Behaviour Driven Development/searching-for-customers-by-entering-an-advanced-query-for-special-merchant.md">Searching for customers by entering an advanced query for special merchant</a>
-    </li>
+    </li>    
     <li>
       <a href="Behaviour Driven Development/updating-a-single-customer.md">Updating a single customer</a>
     </li>
     <li>
       <a href="Behaviour Driven Development/deleting-a-single-customer.md">Deleting a single customer</a>
     </li>
+    </ul>
+    <br>
     <li>
+      <a>Context: <b>Customer Search</b></a>
+    </li>
+    <ul>
+      <li>
+      <a href="Behaviour Driven Development/searching-for-customers-by-entering-an-advanced-query-for-special-merchant.md">Searching for customers by entering an advanced query for special merchant</a>
+    </li>
+    </ul>
+    <br>
+    <li>
+      <a>Context: <b>Address</b></a>
+    </li>
+    <ul>
+      <li>
       <a href="Behaviour Driven Development/creating-an-address-resource-for-a-customer.md">Creating an address resource for a customer</a>
     </li>
     <li>
@@ -55,5 +71,6 @@
     <li>
       <a href="Behaviour Driven Development/release.md">Deleting a list of adresses for a customer</a>
     </li>
+    </ul>
   </ol>
 </details>
