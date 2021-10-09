@@ -26,7 +26,7 @@ This project aims to propose a software development process framework giving ins
       </li>
       </li>
 	  <li>
-        <a href="#release">Release</a>
+        <a href="#delivery">Delivery</a>
       </li>
     </ul>
   </ol>
