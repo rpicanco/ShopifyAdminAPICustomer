@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Feature: Retrieving a list of adresses for a customer</h1>
   <div class="panel panel-default">    
-    <div class="panel-body"><p style="font-size:100px"><b>In order</b> to list of adresses of shop's customers<br><b>As</b> a Merchant<br><b>I want</b> to list of adresses of shop's customers for allowing them to order products in my shop.</p></div>    
+    <div class="panel-body"><p style="font-size:100px"><b>In order</b> to retrieve a list of adresses of shop's customers<br><b>As</b> a Merchant<br><b>I want</b> to list of adresses of shop's customers for allowing them to order products in my shop.</p></div>    
   </div>
 </div>
 
