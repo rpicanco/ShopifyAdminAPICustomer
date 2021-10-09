@@ -88,7 +88,7 @@
 </details>
 
 <details>
-  <summary>Creating an address resource with all same fields value for a customer that already has another address associated with it</summary><br>
+  <summary>Creating a second address resource for a customer with all same fields value from the first one</summary><br>
   <b>Given</b> The customer is already registered for the merchant<br>
   <b>And</b> there is an address associated with it<br>
   <b>And</b> I inform the same fields value of address is already associated with it<br>
