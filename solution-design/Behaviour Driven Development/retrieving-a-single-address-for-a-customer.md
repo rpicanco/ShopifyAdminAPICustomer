@@ -38,6 +38,10 @@
 </details>
 
 <details>
+  <summary>Retrieving a single address for a nonexistent address</summary><br>  
+</details>
+
+<details>
   <summary>Retrieving a single address for a customer from other merchant</summary><br>  
 </details>
 
