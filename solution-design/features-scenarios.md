@@ -34,7 +34,7 @@
     </li>
     <li>
       <a href="Behaviour Driven Development/deleting-a-single-customer.md">Deleting a single customer</a>
-    </li>
+    </li>    
     </ul>
     <br>
     <li>
@@ -42,8 +42,29 @@
     </li>
     <ul>
       <li>
-      <a href="Behaviour Driven Development/searching-for-customers-by-entering-an-advanced-query-for-special-merchant.md">Searching for customers by entering an advanced query for special merchant</a>
+       <a href="Behaviour Driven Development/searching-for-customers-by-entering-an-advanced-query-for-special-merchant.md">Searching for customers by entering an advanced query for special merchant</a>
+      </li>
+    </ul>
+    <br>
+    <li>
+      <a>Context: <b>Customer Search Manager</b></a>
     </li>
+    <ul>
+      <li>
+       <a href="Behaviour Driven Development/creating-a-customer-search-resource-for-a-merchant.md">Creating a customer search resource for a merchant</a>
+      </li>
+      <li>
+       <a href="Behaviour Driven Development/Retrieving-a-list-of-customer-searches-for-a-merchant.md">Retrieving a list of customer searches for a merchant</a>
+      </li>
+      <li>
+       <a href="Behaviour Driven Development/Retrieving-a-single-customer-search-for-a-merchant.md">Retrieving a single customer search for a merchant</a>
+      </li>
+      <li>
+       <a href="Behaviour Driven Development/Updating-a-single-customer-search-for-a-merchant.md">Updating a single customer search for a merchant</a>
+      </li>
+      <li>
+       <a href="Behaviour Driven Development/Deleting-a-single-customer-search-for-a-merchant.md">Deleting a single customer search for a merchant</a>
+      </li>
     </ul>
     <br>
     <li>
