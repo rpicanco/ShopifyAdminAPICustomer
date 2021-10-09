@@ -42,6 +42,10 @@
 </details>
 
 <details>
+  <summary>Updating a single address resource for a nonexistent address</summary><br>  
+</details>
+
+<details>
   <summary>Updating a single address resource for a customer from other merchant</summary><br>  
 </details>
 
