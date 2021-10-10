@@ -281,10 +281,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Error"
 components:
-  
   securitySchemes:
-    
-      
     OAuth2:
       type: oauth2
       flows:
@@ -312,6 +309,82 @@ components:
     Customer:
       type: object
       required:
+       - email
+       - first_name
+       - last_name
+      properties:
+        customer_id:
+          type: string
+          format: uuidv4
+          description: "A unique identifier for the customer."
+          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
+          readOnly: true
+        first_name:
+          type: string
+          description: "The customer's first name."
+          example: "John"
+        last_name:
+          type: string
+          description: "The customer's last name."
+          example: "Norman"
+        email:
+          type: string
+          description: "The unique email address of the customer. Attempting to assign the same email address to multiple customers returns an error."
+          example: "bob.norman@hostmail.com"
+        note:
+          type: string
+          description: "A note about the customer."
+          example: "Placed an order that had a fraud warning"
+        phone:
+          type: string
+          description: "The unique phone number (E.164 format) for this customer. Attempting to assign the same phone number to multiple customers returns an error. The property can be set using different formats, but each format must represent a number that can be dialed from anywhere in the world. The following formats are all valid: [6135551212, +16135551212, (613)555-1212, +1 613-555-1212]"
+          example: "6135551212"
+        
+        address:
+          $ref: '#/components/schemas/Address'
+        default_address:
+          $ref: '#/components/schemas/DefaultAddress'
+        marketing:
+          $ref: '#/components/schemas/Marketing'
+        tags:
+          type: string
+          description: "Tags that the shop owner has attached to the customer, formatted as a string of comma-separated values. A customer can have up to 250 tags. Each tag can have up to 255 characters."
+          example: "loyal"
+        state:
+          type: string
+          enum:
+            - disabled
+            - invited
+            - enabled
+            - declined
+          description: >-
+            Tipo de documento do portador:
+            <br>disabled - "The customer doesn't have an active account. Customer accounts can be disabled from the Shopify admin at any time."
+            <br>invited - "The customer has received an email invite to create an account."
+            <br>enabled - "The customer has created an account."
+            <br>declined - "The customer declined the email invite to create an account."
+          default: disabled
+          readOnly: true
+        verified_email:
+          type: boolean
+          description: "Whether the customer has verified their email address."
+          default: false
+        last_order:
+          $ref: '#/components/schemas/Order'
+        created_at:
+          type: string
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer was created."
+          readOnly: true
+        updated_at:
+          type: string
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer information was last updated."
+          readOnly: true
+    
+    Address:
+      type: object
+      required:
        - customer_id
       properties:
         customer_id:
@@ -320,31 +393,72 @@ components:
           description: Unique identifier of the customer.
           example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
           readOnly: true
-        first_name:
+          
+    Marketing:
+      type: object
+      properties:
+        accepts_marketing:
+          type: boolean
+          description: "Whether the customer has consented to receive marketing material via email."
+          default: false
+        accepts_marketing_updated_at:
           type: string
-          description: The customer first name.
-          example: "João"
-        last_name:
-          type: string
-          description: The customer last name.
-          example: "Santos"
-        document:
-          type: string
-          description: A valid customer document.
-          example: "62319616055"
-        gross_salary:
-          type: number
-          description: "The gross salary is defined in number big decimal (2000.00 is R$2.000.00)."
-          example: 2000.00
-        created_at:
-          type: string
-          format: date
-          description: Create date YYYY-MM-DD.
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer consented or objected to receiving marketing material by email. Set this value whenever the customer consents or objects to marketing materials."
           readOnly: true
-        updated_at:
+          
+    Order:
+      type: object
+      properties:
+        last_order_id:
           type: string
-          format: date
-          description: Updated date YYYY-MM-DD.
+          description: "The ID of the customer's last order."
+          example: "9e8783c6-d3be-4236-9cc4-a20d45276d53"
+          readOnly: true
+        last_order_name:
+          type: string
+          description: "The name of the customer's last order. This is directly related to the name field on the Order resource."
+          example: "9e8783c6-d3be-4236-9cc4-a20d45276d53"
+          readOnly: true
+        orders_count:
+          type: number
+          description: "The number of orders associated with this customer."
+          example: 5
+          readOnly: true
+        total_spent:
+          type: string
+          description: "The total amount of money that the customer has spent across their order history."
+          example: "375.30"
+          readOnly: true
+        currency:
+          type: string
+          description: "The three-letter code (ISO 4217 format) for the currency that the customer used when they paid for their last order. Defaults to the shop currency. Returns the shop currency for test orders."
+          example: "EUR"
+          readOnly: true
+          
+    DefaultAddress:
+      type: object
+      readOnly: true
+      required:
+       - customer_id
+      properties:
+        customer_id:
+          type: string
+          format: uuidv4
+          description: Unique identifier of the customer.
+          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
+          readOnly: true
+          
+    CustomerSearchManager:
+      type: object
+      required:
+       - customer_id
+      properties:
+        customer_id:
+          type: string
+          format: uuidv4
+          description: Unique identifier of the customer.
+          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
           readOnly: true
     
     Error:
