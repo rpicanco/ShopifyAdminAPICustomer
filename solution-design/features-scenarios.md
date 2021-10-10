@@ -90,7 +90,7 @@
       <a href="Behaviour Driven Development/deleting-a-single-address-for-a-customer.md">Deleting a single address for a customer</a>
     </li>
     <li>
-      <a href="Behaviour Driven Development/release.md">Deleting a list of adresses for a customer</a>
+      <a href="Behaviour Driven Development/deleting-a-list-of-addresses-for-a-customer.md">Deleting a list of adresses for a customer</a>
     </li>
     </ul>
   </ol>
