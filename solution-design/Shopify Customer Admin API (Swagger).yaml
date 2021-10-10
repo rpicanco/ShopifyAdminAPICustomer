@@ -1,0 +1,368 @@
+openapi: 3.0.0
+info:
+  title: Shopify Customer Admin API
+  contact: {}
+  version: '1.0'
+servers:
+  - url: http://localhost:8080
+paths:
+  /admin/customers:
+    post:
+      security:
+        - OAuth2: [write_customers, read_customers]
+      tags:
+       - Customer
+      summary: Store the customer informations.
+      description: Store the customer informations.
+      operationId: storeCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+        description: The customer information.
+      responses:
+        "201":
+          description: Customer information stored.
+          headers:
+            Location:
+              description: Location of the resource.
+              schema:
+                type: string
+                example: http://localhost:8080/sensediabank/v1/customers/{id}
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Resource Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "422":
+          description: Business error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  
+  /admin/customers/{id}:
+    get:
+      security:
+        - OAuth2: [read_customers]
+      tags:
+      - Customer
+      summary: Retrieve the customer by its ID
+      description: Retrieve the customer by its ID
+      operationId: getCustomer
+      parameters:
+        - $ref: '#/components/parameters/CustomerIDParam'
+      responses:
+        "200":
+          description: The customer information.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Payment link not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+                
+  /admin/api/v1/customers/{id}/addresses:
+    post:
+      summary: Store the customer informations.
+      description: Store the customer informations.
+      operationId: XX
+      security:
+        - OAuth2: [write_customers, read_customers]
+      tags:
+       - Address
+      parameters:
+        - $ref: '#/components/parameters/CustomerIDParam'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+        description: The customer information.
+      responses:
+        "201":
+          description: Customer information stored.
+          headers:
+            Location:
+              description: Location of the resource.
+              schema:
+                type: string
+                example: http://localhost:8080/sensediabank/v1/customers/{id}
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Resource Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "422":
+          description: Business error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  
+  /admin/api/v1/customer_saved_searches:
+    post:
+      security:
+        - OAuth2: [write_customers, read_customers]
+      tags:
+       - Customer Search Manager
+      summary: Store the customer informations.
+      description: Store the customer informations.
+      operationId: XXX
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+        description: The customer information.
+      responses:
+        "201":
+          description: Customer information stored.
+          headers:
+            Location:
+              description: Location of the resource.
+              schema:
+                type: string
+                example: http://localhost:8080/sensediabank/v1/customers/{id}
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Resource Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "422":
+          description: Business error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+                
+  /admin/api/v1/customers/search:
+    post:
+      summary: Store the customer informations.
+      description: Store the customer informations.
+      operationId: X
+      security:
+        - OAuth2: [write_customers, read_customers]
+      tags:
+       - Customer Search
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+        description: The customer information.
+      responses:
+        "201":
+          description: Customer information stored.
+          headers:
+            Location:
+              description: Location of the resource.
+              schema:
+                type: string
+                example: http://localhost:8080/sensediabank/v1/customers/{id}
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Resource Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "422":
+          description: Business error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  
+  securitySchemes:
+    
+      
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://example.com/oauth/authorize
+          tokenUrl: https://example.com/oauth/token
+          scopes:
+            write_customers: Access to Create Customer (POST), Edit Customer (PUT and PATCH) and Remove Customer (DELETE).
+            change_state_customers: Access to Edit Customer State (POST).
+            read_customers: Access to Read Customer Information (GET).
+            search_customers: Access to Read Customer Information in an advanced manner. (GET).
+  
+  parameters:
+    CustomerIDParam:
+      name: id
+      in: path
+      description: "The Customer id"
+      example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
+      required: true
+      schema:
+        type: string
+        format: uuidv4
+  
+  schemas:
+    Customer:
+      type: object
+      required:
+       - customer_id
+      properties:
+        customer_id:
+          type: string
+          format: uuidv4
+          description: Unique identifier of the customer.
+          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
+          readOnly: true
+        first_name:
+          type: string
+          description: The customer first name.
+          example: "João"
+        last_name:
+          type: string
+          description: The customer last name.
+          example: "Santos"
+        document:
+          type: string
+          description: A valid customer document.
+          example: "62319616055"
+        gross_salary:
+          type: number
+          description: "The gross salary is defined in number big decimal (2000.00 is R$2.000.00)."
+          example: 2000.00
+        created_at:
+          type: string
+          format: date
+          description: Create date YYYY-MM-DD.
+          readOnly: true
+        updated_at:
+          type: string
+          format: date
+          description: Updated date YYYY-MM-DD.
+          readOnly: true
+    
+    Error:
+      required:
+      - message
+      type: object
+      properties:
+        code:
+          type: string
+          description: For some errors that could be handled programmatically, a short string indicating the error code reported. Note that this is not the HTTP return code.
+          example: field_size_error
+        message:
+          type: string
+          description: A human-readable message providing more details about the error.
+          example: Size for field [name] must be between 10 and 50
+        details:
+          type: array
+          items:
+            type: object
+          description: Array of other error information and details. Object type can very depending on the context of the error.
+          example: '[{ "security_code": "security code is invalid"}, {"card_number":"card number is required"}]'
