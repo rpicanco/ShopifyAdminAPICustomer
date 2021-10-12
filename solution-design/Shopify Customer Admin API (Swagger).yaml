@@ -12,8 +12,8 @@ paths:
         - OAuth2: [write_customers, read_customers]
       tags:
        - Customer
-      summary: Store the customer informations.
-      description: Store the customer informations.
+      summary: Store the customer information.
+      description: Store the customer information.
       operationId: storeCustomer
       requestBody:
         content:
@@ -23,13 +23,11 @@ paths:
         description: The customer information.
       responses:
         "201":
-          description: Customer information stored.
-          headers:
-            Location:
-              description: Location of the resource.
+          description: "Customer has been created successfully"
+          content:
+            application/json:
               schema:
-                type: string
-                example: http://localhost:8080/sensediabank/v1/customers/{id}
+                $ref: "#/components/schemas/Customer"
         "400":
           description: Invalid request. Not all necessary data are validated for hiring at
             this point. Validates mandatory attributes according to swagger
@@ -62,7 +60,101 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
-  
+    get:
+      security:
+        - OAuth2: [write_customers, read_customers]
+      tags:
+       - Customer
+      summary: Get customers by filters.
+      description: Get customers by filters.
+      operationId: getCustomer
+      parameters:
+        - in: query
+          name: created_at_max
+          schema:
+            type: string
+            format: dateTime
+          description: "Show customers created before a specified date. (format: 2014-04-25T16:15:47-04:00)"
+        - in: query
+          name: created_at_min
+          schema:
+            type: string
+            format: dateTime
+          description: "Show customers created after a specified date. (format: 2014-04-25T16:15:47-04:00)"
+        - in: query
+          name: fields
+          schema:
+            type: string
+          description: "Show only certain fields, specified by a comma-separated list of field names."
+        - in: query
+          name: ids
+          schema:
+            type: string
+          description: "Restrict results to customers specified by a comma-separated list of IDs."
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+          description: "The page number."
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 50
+          description: "The maximum number of results to show."
+        - in: query
+          name: updated_at_max
+          schema:
+            type: string
+            format: dateTime
+          description: "Show customers last updated before a specified date. (format: 2014-04-25T16:15:47-04:00)"
+        - in: query
+          name: updated_at_min
+          schema:
+            type: string
+            format: dateTime
+          description: "Show customers last updated after a specified date. (format: 2014-04-25T16:15:47-04:00)"
+      responses:
+        200:
+          description: "The list of customer"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CustomersListResponse"
+        "400":
+          description: Invalid request. Not all necessary data are validated for hiring at
+            this point. Validates mandatory attributes according to swagger
+            definitions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Invalid Authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Resource Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "422":
+          description: Business error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server internal error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+            
   /admin/customers/{id}:
     get:
       security:
@@ -71,7 +163,7 @@ paths:
       - Customer
       summary: Retrieve the customer by its ID
       description: Retrieve the customer by its ID
-      operationId: getCustomer
+      operationId: getCustomerById
       parameters:
         - $ref: '#/components/parameters/CustomerIDParam'
       responses:
@@ -298,7 +390,7 @@ components:
     CustomerIDParam:
       name: id
       in: path
-      description: "The Customer id"
+      description: "A unique identifier for the customer."
       example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
       required: true
       schema:
@@ -313,7 +405,7 @@ components:
        - first_name
        - last_name
       properties:
-        customer_id:
+        id:
           type: string
           format: uuidv4
           description: "A unique identifier for the customer."
@@ -334,16 +426,13 @@ components:
         note:
           type: string
           description: "A note about the customer."
-          example: "Placed an order that had a fraud warning"
+          example: "Placed an order that had a fraud warning."
         phone:
           type: string
           description: "The unique phone number (E.164 format) for this customer. Attempting to assign the same phone number to multiple customers returns an error. The property can be set using different formats, but each format must represent a number that can be dialed from anywhere in the world. The following formats are all valid: [6135551212, +16135551212, (613)555-1212, +1 613-555-1212]"
           example: "6135551212"
-        
-        address:
-          $ref: '#/components/schemas/Address'
         default_address:
-          $ref: '#/components/schemas/DefaultAddress'
+          $ref: '#/components/schemas/Address'
         marketing:
           $ref: '#/components/schemas/Marketing'
         tags:
@@ -385,15 +474,54 @@ components:
     Address:
       type: object
       required:
-       - customer_id
+       - id
       properties:
-        customer_id:
+        id:
           type: string
           format: uuidv4
-          description: Unique identifier of the customer.
+          description: "A unique identifier for the address."
           example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
           readOnly: true
-          
+        address1:
+          type: string
+          description: "The customer's mailing address"
+          example: "1 Rue des Carrieres"  
+        address2:
+          type: string
+          description: "An additional field for the customer's mailing address."
+          example: "Suite 1234"
+        city:
+          type: string
+          description: "The customer's city, town, or village."
+          example: "Montreal"
+        province:
+          type: string
+          description: "The customer’s region name. Typically a province, a state, or a prefecture."
+          example: "Quebec"
+        country_code:
+          type: string
+          description: "The two-letter country code corresponding to the customer's country."
+          example: "CA"
+        country:
+          type: string
+          description: "The customer's country."
+          example: "Canada"
+          readOnly: true
+        zip:
+          type: string
+          description: "The customer’s postal code, also known as zip, postcode, Eircode, etc."
+          example: "G1R 4P5"
+        created_at:
+          type: string
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer was created."
+          readOnly: true
+        updated_at:
+          type: string
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer information was last updated."
+          readOnly: true
+        
     Marketing:
       type: object
       properties:
@@ -410,15 +538,15 @@ components:
     Order:
       type: object
       properties:
-        last_order_id:
+        id:
           type: string
           description: "The ID of the customer's last order."
           example: "9e8783c6-d3be-4236-9cc4-a20d45276d53"
           readOnly: true
-        last_order_name:
+        name:
           type: string
           description: "The name of the customer's last order. This is directly related to the name field on the Order resource."
-          example: "9e8783c6-d3be-4236-9cc4-a20d45276d53"
+          example: "#1169"
           readOnly: true
         orders_count:
           type: number
@@ -436,30 +564,49 @@ components:
           example: "EUR"
           readOnly: true
           
-    DefaultAddress:
-      type: object
-      readOnly: true
-      required:
-       - customer_id
-      properties:
-        customer_id:
-          type: string
-          format: uuidv4
-          description: Unique identifier of the customer.
-          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
-          readOnly: true
-          
     CustomerSearchManager:
       type: object
       required:
-       - customer_id
+       - id
       properties:
-        customer_id:
+        id:
           type: string
-          format: uuidv4
-          description: Unique identifier of the customer.
-          example: "06f256c8-1bbf-42bf-93b4-ce2041bfb87e"
+          description: "A unique identifier for the customer saved search."
+          example: "9e8783c6-d3be-4236-9cc4-a20d45276d53"
           readOnly: true
+        name:
+          type: string
+          description: "The name given by the shop owner to the customer saved search."
+          example: "Accepts Marketing"
+        query:
+          type: string
+          description: "The set of conditions that determines which customers are returned by the saved search. For more information, see Customer saved search queries."
+          example: "accepts_marketing:1"
+        updated_at:
+          type: string
+          format: datetime
+          description: "The date and time (ISO 8601 format) when the customer information was last updated."
+          readOnly: true
+    
+    CustomersListResponse:
+      required:
+        - page
+        - limit
+        - total
+      properties:
+        customers:
+          type: array
+          items:
+            $ref: '#/components/schemas/Customer'
+        page:
+          type: integer
+          description: "The current page."
+        limit:
+          type: integer
+          description: "The maximum number of results to show."
+        total:
+          type: integer
+          description: "The total of customers."
     
     Error:
       required:
